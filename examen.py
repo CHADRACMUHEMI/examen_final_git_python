@@ -18,6 +18,8 @@ class Voiture(Engin):
         self.prix=prix
         self.etat=etat
         self.marque=marque
+    def changer(self):
+        print("apres avoir acheter l'engin pas de remise")
 
 maintenant=Engin('moto',123,'palos',900,'expire 4')
 maintenant.prix=5
