@@ -6,9 +6,9 @@ class Engin:
         self.maisonfab=maisonfab
         self.prix=prix
         self.etat=etat
-    def reparer():
+    def reparer(self):
         print("reparation engin gratuit pour delai de 2 mois")
-    def changer():
+    def changer(self):
         print("changer l'engin si toutes les fonctionnalités ne s'execute pas")
 class Voiture(Engin):
     def __init__(self,nomengin,datefabrication,maisonfab,prix,etat,marque):
