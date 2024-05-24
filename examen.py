@@ -1,4 +1,9 @@
-class Engin:
+from abc import ABC
+class Moteur(ABC):
+    def qualiter(self):
+        print('ce monteur est conçu aux etas unis')
+
+class Engin(Moteur):
     "machine destiné a une fonction"
     def __init__(self,nomengin,datefabrication,maisonfab,prix,etat):
         self.nomengin=nomengin
@@ -18,4 +23,5 @@ class Voiture(Engin):
 
 b=Voiture(2,3,4,2,5)
 print(b.reparer())
+print(b.qualiter())
 
