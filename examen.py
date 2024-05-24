@@ -2,15 +2,16 @@ from abc import ABC
 class Moteur(ABC):
     def qualiter(self):
         print('ce monteur est conçu aux etas unis')
+        #encapsulqtion
 
 class Engin(Moteur):
     "machine destiné a une fonction"
     def __init__(self,nomengin,datefabrication,maisonfab,prix,etat):
-        self.nomengin=nomengin
-        self.datefabrication=datefabrication
-        self.maisonfab=maisonfab
-        self.prix=prix
-        self.etat=etat
+        self.__nomengin=nomengin
+        self.__datefabrication=datefabrication
+        self.__maisonfab=maisonfab
+        self.__prix=prix
+        self.__etat=etat
     def reparer(self,message="reparation engin gratuit pour delai de 2 mois"):
         print(message)
     def changer(self):
